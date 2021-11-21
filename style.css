@@ -1,0 +1,35 @@
+nav{
+    background-color: aquamarine;
+}
+.topnav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul li{
+    margin: 1rem;
+    padding: 1rem;
+}
+.icon{
+    display: none;
+}
+
+@media screen and (max-width:650px){
+    .topnav{
+        display: none;
+    }
+    .topnav.responsive{
+        display: inline-block;
+    }
+    nav ul li{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .icon{
+        position: absolute;
+        right: 5rem;
+        display: block;
+    }
+}
